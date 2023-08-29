@@ -1,0 +1,1 @@
+> Урок 2: Про сервис JSONplaceholder, JSON Server и Firebase, а также fetch(), then().
