@@ -149,8 +149,8 @@
       "title": "Метро: Исход",
       "price": 1479,
       "sale": true,
-      "img": "./img/goods/hover/metro.jpg",
-      "hoverImg": "./img/goods/hover/metro.jpg",
+      "img": "./img/goods/main/metro.jpg",
+      "hoverImg": "./img/goods/main/metro.jpg",
       "category": "Игры и софт"
     },
     {

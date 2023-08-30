@@ -1,11 +1,12 @@
 import getData from './get-data.js';
+import renderGoods from './render-goods.js';
 
-const second = () => {
+const load = () => {
   const cartButton = document.querySelector('#cart');
 
   getData().then((data) => {
-    console.log(data);
+    renderGoods(data)
   });
 };
 
-export default second;
+export default load;
