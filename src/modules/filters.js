@@ -6,6 +6,12 @@
 export const searchFilter = (goods, value) => {
   return goods.filter((goodsItem) => {
     // return goodsItem.sale === true; - если мы например пропишем так, то у нас останутся лишь те элементы массива, у который свойство sale строго равняется true, т.е. лишь товары по акции.
-    return goodsItem.title.includes(value);
+    return goodsItem.title.toLowerCase().includes(value.toLowerCase()); // добавим также метод toLowerCase() к названию и к введённому значению, чтобы автоматически переводить введённое значение в нижний регистр, чтобы артикли находились вне зависимости от того, в каком регистре пользователь их искал.
+  });
+};
+// 1.3 Здесь мы возвращаем тот массив, элементы которого имеют определённое значение категорий. У каждого элемента есть свойство category и оно равно одной из категорий, по которой мы можем кликнуть в модальном окне «Каталог» [см. catalogue.js], а текст с названием категории мы передаём в value.
+export const categoryFilter = (goods, value) => {
+  return goods.filter((goodsItem) => {
+    return goodsItem.category === value;
   });
 };
