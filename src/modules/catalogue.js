@@ -1,6 +1,6 @@
 import getData from './get-data.js';
 import renderGoods from './render-goods.js';
-import { categoryFilter } from "./filters.js";
+import { categoryFilter } from './filters.js';
 // 1.0 Реализуем по клику на кнопке "Каталог" и выборе нужной пользователю категории, фильтрацию всего товара по категориям этого товара.
 const catalogue = () => {
   // 1.1 Сперва получим саму кнопку кнопки "Каталог".
@@ -27,7 +27,7 @@ const catalogue = () => {
   // 1.3.2 Теперь переберём все эти элементы и повесим обработчики события. И по клику на каждую из li’шек категорий нам необходимо получить их текстовое содержимое.
   // 1.4 Теперь задача параллельно запускать фильтрацию данных и их получение. Для этого возьмём из search.js функцию getData() и вызовем её по клику. (не забываем импортировать getData() & renderGoods())
   // 1.5 Также нам требуется создать новую функцию в filters.js [categoryFilter()]
-  catalogueCategories.forEach((category) => {
+  catalogueCategories.forEach(category => {
     category.addEventListener('click', () => {
       const content = category.textContent;
 

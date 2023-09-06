@@ -1,6 +1,6 @@
-import getData from './get-data.js';
+/* import getData from './get-data.js';
 import renderGoods from './render-goods.js';
-import { searchFilter } from './filters.js';
+import { searchFilter } from './filters.js'; */
 
 const search = () => {
   // 1.1 Получим строку ввода поиска
@@ -22,4 +22,4 @@ const search = () => {
   });
 };
 
-export default search;
+// export default search;

@@ -1,7 +1,7 @@
-import getData from '../get-data.js';
+/* import getData from '../get-data.js';
 import renderGoods from '../render-goods.js';
 import { searchFilter } from '../filters.js';
-import { debounce } from '../helpers.js';
+import { debounce } from '../helpers.js'; */
 
 const search = () => {
   const searchInput = document.querySelector('.search-wrapper_input');
@@ -19,4 +19,4 @@ const search = () => {
   searchInput.addEventListener('input', debounceSearch);
 };
 
-export default search;
+// export default search;
